@@ -35,7 +35,7 @@ const SigninComponent = () => {
                 setValues({...values, error: data.error, loading: false});
             } else {
                 authenticate(data, () => {
-                    Router.push(`/`);
+                     Router.push(`/`);
                 })
                
             }
