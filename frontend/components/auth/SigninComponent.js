@@ -44,7 +44,7 @@ const SigninComponent = () => {
     }
 
     const handleChange = name => e => {
-        setValues({...values, error: false, [name]: e.target.value});
+         setValues({...values, error: false, [name]: e.target.value});
     }
 
     const showLoading = () => (loading? <div className="alert alert-info">Loading...</div> : '');
