@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import {APP_NAME} from '../config';
 import {signout, isAuth} from '../actions/auth';
 import Router from 'next/router';
+import NProgress from 'nprogress';
 
 import {
   Collapse,
@@ -19,6 +20,9 @@ import {
 } from 'reactstrap';
 import Link from 'next/link';
 
+Router.onRouteChangeStart = url => NProgress.start();
+Router.onRouteChangeComplete = url => NProgress.done();
+Router.onRouteChangeError = url => NProgress.done();
 
 const Header = () => {
 
