@@ -8,6 +8,8 @@ class MyDocument extends Document {
       <Html lang='en'>
         <Head>
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css'></link>
+       
+        <link rel='stylesheet' href = '/static/css/styles.css'></link>
         </Head>
         <body>
           <Main />
